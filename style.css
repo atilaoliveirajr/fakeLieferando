@@ -1,0 +1,623 @@
+@font-face {
+    font-family: 'Takeaway Sans';
+    src: url('fonts/takeaway-sans-bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Takeaway Sans It';
+    src: url('fonts/takeaway-sans-italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Takeaway Sans Regular';
+    src: url('fonts/takeaway-sans-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Fontello';
+    src: url('fonts/fontello.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'roboto slim';
+    src: url('fonts/roboto-slab-v9-latin-ext_cyrillic_latin_cyrillic-ext-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'roboto regular';
+    src: url('fonts/roboto-slab-v9-latin-ext_cyrillic_latin_cyrillic-ext-regular.woff2') format('woff2');
+}
+
+body {
+    margin: 0px;
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #666;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    height: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none solid rgb(10, 56, 71);
+    color: rgb(10, 56, 71);
+    text-align: left;
+    word-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    height: 28px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.marginlessbottom {
+    margin-bottom: 0px !important;
+}
+
+.borderlessbottom {
+    border-bottom: none !important;
+    border-radius: 2px 2px 0px 0px!important;
+}
+
+.header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    width: calc (100% - 32px);
+    min-width: 975px;
+    height: 72px;
+    background-color: rgb(255, 128, 0);
+    z-index: 2;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.goBackBtn {
+    padding: 0px;
+    margin-left: 9px;
+}
+
+.header .goBackBtn::before {
+    content: "\E993";
+    font-family: fontello;
+    font-size: .8rem;
+    line-height: 1.75rem;
+    margin: 0 9px 0 0;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.local {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.local a {
+    color: white;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 162px;
+    height: 28px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.languageFlag {
+    font-family: "Takeaway Sans", "Avant Garde", "Century Gothic", Helvetica, Arial, sans-serif;
+    text-align: center;
+    word-spacing: 0px;
+    background-image: url('img/gb.svg');
+    background-position: 50% 50%;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    border: 4px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menuBtnContainer {
+    display: flex;
+    height: 44.458px;
+    width: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28px;
+}
+
+.header .menuBtn::before {
+    content: "\E838";
+    color: #fff;
+    font-family: fontello;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.pageBody {
+    padding-top: 72px;
+    width: 100%;
+}
+
+.mainSection {
+    height: 100%;
+    width: calc(100% - 344px);
+    min-width: 665px;
+}
+
+.backGroundImg {
+    background-image: url("img/backgroundHeader.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.restaurantlogo {
+    display: flex;
+    position: relative;
+    top: 135px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer {
+    display: flex;
+    height: 130px;
+    width: 130px;
+}
+
+.logoChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(215, 215, 215);
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.logoChild img {
+    width: 81%
+}
+
+.menuCardContainer {
+    font-family: Takeaway Sans Regular, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(102, 102, 102);
+    text-align: left;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: hidden;
+}
+
+.menuCardContainer img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 190px;
+}
+
+.menuCardContainer p {
+    line-height: 1.6;
+    max-width: 690px;
+}
+
+.swiperCategory {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background-color: #f8f5f2;
+    padding: 0px;
+}
+
+.swiperCategory ul {
+    margin: 0 auto;
+    display: flex;
+    width: min-content;
+    align-items: center;
+    justify-content: left;
+}
+
+.swiperCategory ul,
+li,
+a {
+    display: flex;
+    margin: 0px;
+    font-size: 14px;
+    font-family: Roboto Slim, Arial, serif;
+    text-decoration: none;
+    color: #0a3847;
+    font-weight: 100;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.swiperCategory ul,
+li,
+a:hover {
+    text-decoration: none;
+}
+
+.swiperCategory li {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.swiperCategory ul {
+    padding: 0px;
+}
+
+.searchIcon {
+    height: 40px;
+    line-height: 40px;
+    width: 35px;
+    margin: 0 0 0 15px;
+    text-align: center;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.swiperCategory .searchIcon::before {
+    content: "\e800";
+    font-size: 19px;
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.orange {
+    color: #ff8000;
+    font-family: Roboto Regular, Arial, serif;
+}
+
+.basket {
+    display: inline-block;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+    width: 344px;
+    min-height: 100%;
+    top: 72px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.menuCard {
+    margin: 16px;
+}
+
+.mealsGroup {
+    border-radius: 2px 2px 0 0;
+    background-color: white;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #f8f5f2;
+}
+
+.mealsGroupBorder {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    line-height: 22px;
+    padding: 19px 12px;
+    margin: 0px;
+    background-color: #f8f5f2;
+    border-radius: 2px 2px 0 0;
+}
+
+.meal {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 2px 2px 0 0;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #f8f5f2;
+}
+
+.meal:hover {
+    cursor: pointer;
+    background-color: rgb(238, 247, 250);
+    box-shadow: 0px 1px 1px 0 hsla(0, 0%, 50%, .4);
+}
+
+.mealBorder {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    line-height: 22px;
+    padding: 19px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 2px;
+}
+
+.mealBorderExpander {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fontello;
+    font-weight: 600;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    color: #1574f5;
+    border-radius: 0 2px 0 0;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    font-size: 30px;
+    text-align: center;
+    content: "\E99B";
+}
+
+.productsName {
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #0a3847;
+}
+
+.productInformation {
+    font-weight: 400;
+    font-size: 11px;
+    color: #1574f5;
+    cursor: auto;
+    appearance: none;
+    border: none;
+    background-color: inherit;
+}
+
+.description {
+    font-family: Takeaway Sans It, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: initial;
+    color: #666;
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.price {
+    font-family: Takeaway Sans, Avant Garde, Century Gothic, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px;
+    line-height: 1.22;
+    letter-spacing: -.5px;
+    color: #ff8000;
+    margin: 0px;
+}
+
+.bannerBorder {
+    border-radius: 2px;
+    height: 130px;
+    border: 1px solid #f8f5f2;
+}
+
+.preOrderTabContainer {
+    height: fit-content;
+    background-color: white;
+    border-radius: 0px 0px 2px 2px;
+    border-top: none;
+    border: 2px solid #f8f5f2;
+}
+
+.preOrderTab {
+    display: flex;
+    background-color: rgb(248, 245, 242);
+    height: fit-content;
+    border-radius: 0px 0px 2px 2px;
+    border-top: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.bannerBorderChild {
+    height: 130px;
+    background-image: url('img/misc_vorspeisen.png');
+    background-size: cover;
+}
+
+.quantityController {
+    font-family: "Takeaway Sans", "Avant Garde", "Century Gothic", Helvetica, Arial, sans-serif;
+    color: rgb(0, 123, 255);
+    height: 30px;
+    width: 90px;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+}
+
+.cartBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    width: fit-content;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.basket {
+    overflow: auto;
+}
+
+.basketHeader {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f8f5f2;
+    height: 55px;
+}
+
+.basketHeader h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.shopList {
+    height: fit-content;
+    padding-top: 40px;
+}
+
+.shopListContainer {
+    height: fit-content;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-bottom: 1px solid #f8f5f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.emptyShopList ::before {
+    font-family: fontello;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    font-size: 2rem;
+    color: #d7d7d7;
+    content: "\e97c";
+}
+
+.shopListContainer p {
+    font-family: "Takeaway Sans Regular", "Avant Garde", "Century Gothic", Helvetica, Arial, sans-serif;
+    line-height: 21px;
+    font-weight: 200px;
+    text-decoration: none solid rgb(125, 125, 125);
+    text-align: center;
+    font-size: .875rem;
+    color: #7d7d7d;
+    margin-bottom: 50px !important;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Takeaway Sans Regular", "Avant Garde", "Century Gothic", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cartSumContainer {
+    height: fit-content;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-bottom: 1px solid #f8f5f2;
+}
+
+.orderConfirmationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-bottom: 1px solid #f8f5f2;
+}
+
+.orderConfirmationBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #D7D7D7;
+    border-color: #D7D7D7;
+}
+
+.cartItems {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.itemRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.itemDescription {
+    width: 180px;
+}
+
+.itemRemover:before {
+    cursor: pointer;
+    color: #1574f5;
+    font-size: 18px;
+    content: "\e832";
+    font-family: fontello;
+    font-weight: 400;
+    line-height: .3;
+    padding: 1rem 0;
+}
